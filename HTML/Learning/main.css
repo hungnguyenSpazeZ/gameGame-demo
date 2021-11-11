@@ -1,0 +1,7 @@
+.xyz {color: blueviolet;}
+.xyz.asad {color: coral;}
+div .egh {color: darkgreen;}
+h2.xyz {color: red;}
+
+:root {--text-color: violet;}
+h1 {color: var(--text-color);}

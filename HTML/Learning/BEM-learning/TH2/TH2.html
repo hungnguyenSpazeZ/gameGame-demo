@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/BEM-learning/TH2/TH2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+   <div id="toast">
+       <!-- ---Success--- -->
+       <!-- <div class="toast toast--success">
+           <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+           </div>
+
+           <div class="toast__body">
+               <h3 class="toast__title">Success</h3>
+               <p class="toast__msg">The next generation of the web</p>
+           </div>
+           
+           <div class="toast__close">
+                <i class="fas fa-times"></i>
+           </div>
+       </div> -->
+
+       <!-- ---Info--- -->
+       <!-- <div class="toast toast--info">
+            <div class="toast__icon ">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="toast__body">
+                <h3 class="toast__title">Info</h3>
+                <p class="toast__msg">The next generation of the web</p>
+            </div>
+        
+            <div class="toast__close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div> -->
+
+       <!-- ---Warning--- -->
+       <!-- <div class="toast toast--warning">
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="toast__body">
+                <h3 class="toast__title">Warning</h3>
+                <p class="toast__msg">The next generation of the web</p>
+            </div>
+        
+            <div class="toast__close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div> -->
+
+        <!-- ---Error--- -->
+       <!-- <div class="toast toast--error">
+            <div class="toast__icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="toast__body">
+            <h3 class="toast__title">Error</h3>
+            <p class="toast__msg">generation of the web</p>
+        </div>
+        
+        <div class="toast__close">
+            <i class="fas fa-times"></i>
+        </div> -->
+    </div>
+
+    <div>
+        <div class="btn btn--success">Show success toast</div>
+        <div class="btn btn--error">Show error toast</div>
+    </div>
+
+    <script>
+        // Toast function
+
+        // Goi doi tuong
+        function toast ({
+            tittle = '',
+            message ='',
+            type = 'info',
+            duration = 3000
+        }) {
+            const main = document.getElementById("toast");
+            if (main) {
+                const toast = document.createElement("div");
+                toast.classList.add('toast');
+                toast.innerHTML = `
+                <div class="toast__icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <div class="toast__body">
+                    <h3 class="toast__title">${title}</h3>
+                    <p class="toast__msg">${message}</p>
+                 </div>
+           
+                <div class="toast__close">
+                    <i class="fas fa-times"></i>
+                </div>
+                `;
+                main.appendChild(toast);
+        }
+
+        toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 3000
+            });
+    </script>
+
+</body>
+</html> 

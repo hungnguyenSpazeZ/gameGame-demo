@@ -1,0 +1,115 @@
+/* PC */
+@media (min-width: 1024px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* TABLET & MOBILE  */
+
+@media (max-width: 1023px) {
+    .places-buy-btn {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+
+    .form-submit {
+        padding: 15px 16px;
+        font-size: 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .social-list {
+        font-size: 42px;
+    }
+
+    #footer .social-list a {
+        margin: 0 8px;
+        padding: 12px 0;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 740px) {
+    .s-width-full,
+    .s-col-full {
+        width: 100%;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        padding: 1px 0;
+        
+    }
+
+    #nav li a {
+        display: block;
+        
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav .subnav {
+        position: inherit;
+    }
+
+    #nav .subnav li {
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px;
+    }
+
+    #content #Band {
+        margin-right: -1px;
+    }
+
+    #content .member-item {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    #content .avatar {
+        width: 60%;
+
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+
+
+    
+}
